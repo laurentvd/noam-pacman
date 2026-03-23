@@ -15,24 +15,30 @@ Classic Pac-Man with a twist:
 - **Hand-drawn sprites** — every character and item was drawn on paper, photographed, and processed into game assets
 - **Original soundtrack** — a procedurally generated bass-line loop with kick drums, hi-hats, and snares, all built with the Web Audio API
 - **Sound effects** — chomps, power-ups, ghost eating, death, and victory jingles, all synthesized in-browser
-- **Bombs** — Noam's own addition to the formula: press Space to drop a bomb that explodes after a few seconds, destroying walls and ghosts in a 3-tile radius (with screen shake!)
+- **Bombs** — Noam's own addition to the formula: press Space to drop a bomb that explodes after a few seconds, taking out any ghosts in a 3-tile radius (with screen shake!)
 - **Power pellets** — eat one to turn the tables on the ghosts
 - **Wrap-around tunnels** — escape through the sides of the maze
 
 ### Controls
 
-| Key | Action |
-|---|---|
-| Arrow keys / WASD | Move |
-| Space | Drop a bomb |
+- **Arrow keys / WASD** — Move
+- **Space** — Drop a bomb. It explodes after a few seconds and takes out any ghosts caught in the blast radius
 
-## How to Run
+## Play It
+
+You can play the game right in your browser — no install needed:
+
+**https://laurentvd.github.io/noam-pacman/**
+
+Press any arrow key or WASD to start — the music kicks in on the first keypress.
+
+## Run It Locally
 
 No build tools, no dependencies, no install. Just a browser.
 
 1. Clone the repo:
    ```
-   git clone https://github.com/yourusername/noam-pacman.git
+   git clone https://github.com/laurentvd/noam-pacman.git
    cd noam-pacman
    ```
 
@@ -43,8 +49,6 @@ No build tools, no dependencies, no install. Just a browser.
      npx serve .
      ```
      Then open http://localhost:3000
-
-3. Press any arrow key or WASD to start — the music kicks in on the first keypress.
 
 ## Project Structure
 
